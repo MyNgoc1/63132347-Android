@@ -69,6 +69,22 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 }
+                else if (rbNu.isChecked()){
+                    if(chiSo < 18.5){
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+
+                    }
+                    else if(chiSo >= 18.5 && chiSo <= 22.9){
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Chỉ số BMI của bạn bình thường");
+
+                    }
+                    else if(chiSo == 23){
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn bị thừa cân");
+
+                    }
             }
         });
     }
