@@ -95,6 +95,21 @@ public class MainActivity extends AppCompatActivity {
                         txtNhanXet.setText("Bạn đang bị béo phì(béo phì giai đoạn 1)");
 
                     }
+                    else if(chiSo >=30 && chiSo<= 39.9){
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn đang bị béo phì(béo phì giai đoạn 2)");
+
+                    }
+                    else if(chiSo == 40){
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn đang bị béo phì(béo phì giai đoạn 3)");
+
+                    }
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "Hãy chọn giới tính của bạn",
+                            Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
