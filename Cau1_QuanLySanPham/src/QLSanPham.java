@@ -120,5 +120,10 @@ public class QLSanPham extends JFrame {
 		lblNewLabel_1.setBounds(10, 71, 93, 14);
 		contentPane.add(lblNewLabel_1);
 
+		JLabel lblNewLabel_1_1 = new JLabel("Tên Sản Phẩm");
+		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_1_1.setBounds(10, 105, 93, 14);
+		contentPane.add(lblNewLabel_1_1);
+
 	
 }
