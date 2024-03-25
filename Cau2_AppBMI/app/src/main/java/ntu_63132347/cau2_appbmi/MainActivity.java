@@ -55,6 +55,20 @@ public class MainActivity extends AppCompatActivity {
                     } else if (chiSo > 25 && chiSo <= 29.9) {
                         txtChiSo.setText(String.valueOf(chiSo));
                         txtNhanXet.setText("Bạn sắp bị beo phì(béo phì mức thấp)");
+                    } else if (chiSo >= 30 && chiSo <= 34.9) {
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn đang bị béo phì(béo phì giai đoạn 1)");
+
+                    } else if (chiSo >= 35 && chiSo <= 39.9) {
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn đang bị béo phì(béo phì giai đoạn 2)");
+
+                    } else if (chiSo == 40) {
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn đang bị béo phì(béo phì giai đoạn 3)");
+
+                    }
+                }
             }
         });
     }
