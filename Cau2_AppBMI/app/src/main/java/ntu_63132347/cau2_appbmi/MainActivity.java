@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
                 double chieuCao= Double.parseDouble(etChieuCao.getText().toString()) /100;
                 double canNang= Double.parseDouble(etCanNang.getText().toString());
                 chiSo= Math.round((canNang/Math.pow(chieuCao,2))*10.0)/10.0;
-                
+                if(rbNam.isChecked()) {
+                    if (chiSo < 18.5) {
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn cần bổ sung thêm dinh dưỡng");
             }
         });
     }
