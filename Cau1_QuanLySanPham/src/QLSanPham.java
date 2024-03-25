@@ -140,5 +140,10 @@ public class QLSanPham extends JFrame {
 		txtsoluong.setBounds(131, 138, 120, 20);
 		contentPane.add(txtsoluong);
 
+		JLabel lblNewLabel_1_2_1 = new JLabel("Đơn Giá");
+		lblNewLabel_1_2_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_1_2_1.setBounds(10, 174, 93, 14);
+		contentPane.add(lblNewLabel_1_2_1);
+
 	
 }
