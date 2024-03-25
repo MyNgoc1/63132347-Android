@@ -115,6 +115,36 @@
             />
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chỉ số BMI của bạn là"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txt_ketqua"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txt_nhanxet"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"/>
+
+    </LinearLayout>
     
 
 </LinearLayout>
