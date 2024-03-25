@@ -77,6 +77,23 @@ public class QLSanPham extends JFrame {
 	    Vndung.add(Vdong);
 	    tt += thanhTien;
 	}
+	/**
+	 * Launch the application.
+	 */
+    private ArrayList<SanPham> danhSachSanPham;
+	private JTextField txtmasp;
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					QLSanPham frame = new QLSanPham();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
 
 	
 }
