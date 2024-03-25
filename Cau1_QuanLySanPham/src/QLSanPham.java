@@ -55,5 +55,14 @@ public class QLSanPham extends JFrame {
 	DefaultTableModel dtm=new DefaultTableModel();
 	protected JTextComponent txtsl;
 	protected JTextComponent txtdg;
+
+	void Tieude() {
+		Vtieude.add("Mã SP");
+		Vtieude.add("Loại SP");
+		Vtieude.add("Tên SP");
+		Vtieude.add("Số Lượng");
+		Vtieude.add("Đơn Giá");
+		Vtieude.add("Thành Tiền");
+	}
 	
 }
