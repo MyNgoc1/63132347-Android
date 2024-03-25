@@ -64,5 +64,19 @@ public class QLSanPham extends JFrame {
 		Vtieude.add("Đơn Giá");
 		Vtieude.add("Thành Tiền");
 	}
+
+	void Nhap(SanPham SP) {
+		Vector<Object> Vdong = new Vector<>();
+		Vdong.add(SP.getMasp());
+		Vdong.add(comboBox.getSelectedItem().toString());
+		Vdong.add(SP.getTensp());
+		Vdong.add(SP.getSoluong());
+		Vdong.add(SP.getDongia());
+		float thanhTien = SP.getSoluong() * SP.getDongia();
+	    Vdong.add(thanhTien);
+	    Vndung.add(Vdong);
+	    tt += thanhTien;
+	}
+
 	
 }
