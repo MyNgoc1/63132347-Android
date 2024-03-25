@@ -85,6 +85,16 @@ public class MainActivity extends AppCompatActivity {
                         txtNhanXet.setText("Bạn bị thừa cân");
 
                     }
+                    else if(chiSo > 23 && chiSo <=24.9){
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn sap bị beo phì(béo phì mức thấp)");
+
+                    }
+                    else if(chiSo >=25 && chiSo <=29.9){
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn đang bị béo phì(béo phì giai đoạn 1)");
+
+                    }
             }
         });
     }
