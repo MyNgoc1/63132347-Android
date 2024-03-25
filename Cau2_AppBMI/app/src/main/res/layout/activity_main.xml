@@ -99,6 +99,22 @@
         </RadioGroup>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_tinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TÍNH BMI"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
     
 
 </LinearLayout>
