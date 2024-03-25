@@ -145,5 +145,10 @@ public class QLSanPham extends JFrame {
 		lblNewLabel_1_2_1.setBounds(10, 174, 93, 14);
 		contentPane.add(lblNewLabel_1_2_1);
 
+		txtdongia = new JTextField();
+		txtdongia.setColumns(10);
+		txtdongia.setBounds(131, 173, 120, 20);
+		contentPane.add(txtdongia);
+
 	
 }
