@@ -164,5 +164,23 @@ public class QLSanPham extends JFrame {
 			}
 		});
 
+		btnNewButton.setBounds(54, 207, 89, 23);
+		contentPane.add(btnNewButton);
+		
+		JButton btnXo = new JButton("XOÁ");
+		btnXo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int selectedRow = table.getSelectedRow();
+		        if (selectedRow >= 0) {
+		            float thanhTien = Float.parseFloat(table.getValueAt(selectedRow, 5).toString());
+		            Vndung.remove(selectedRow);
+		            dtm.setDataVector(Vndung, Vtieude);
+		            table.setModel(dtm);
+		            tt -= thanhTien; 
+		            
+		        }
+			}
+		});
+
 	
 }
