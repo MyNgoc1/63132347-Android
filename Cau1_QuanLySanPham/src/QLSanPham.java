@@ -130,5 +130,15 @@ public class QLSanPham extends JFrame {
 		lblNewLabel_1_2.setBounds(10, 137, 93, 19);
 		contentPane.add(lblNewLabel_1_2);
 
+		txttensp = new JTextField();
+		txttensp.setColumns(10);
+		txttensp.setBounds(131, 101, 120, 20);
+		contentPane.add(txttensp);
+		
+		txtsoluong = new JTextField();
+		txtsoluong.setColumns(10);
+		txtsoluong.setBounds(131, 138, 120, 20);
+		contentPane.add(txtsoluong);
+
 	
 }
