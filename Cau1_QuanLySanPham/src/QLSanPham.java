@@ -110,6 +110,15 @@ public class QLSanPham extends JFrame {
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		lblNewLabel.setBounds(10, 29, 73, 14);
 		contentPane.add(lblNewLabel);
+		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Bánh ngọt", "Đồ chơi", "Nước uống"}));
+		comboBox.setBounds(131, 25, 120, 22);
+		contentPane.add(comboBox);
+		
+		JLabel lblNewLabel_1 = new JLabel("Mã Sản Phẩm");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_1.setBounds(10, 71, 93, 14);
+		contentPane.add(lblNewLabel_1);
 
 	
 }
