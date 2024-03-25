@@ -43,6 +43,18 @@ public class MainActivity extends AppCompatActivity {
                     if (chiSo < 18.5) {
                         txtChiSo.setText(String.valueOf(chiSo));
                         txtNhanXet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+
+                    } else if (chiSo >= 18.5 && chiSo <= 24.9) {
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Chỉ số BMI của bạn bình thường");
+
+                    } else if (chiSo == 25) {
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn bị thừa cân");
+
+                    } else if (chiSo > 25 && chiSo <= 29.9) {
+                        txtChiSo.setText(String.valueOf(chiSo));
+                        txtNhanXet.setText("Bạn sắp bị beo phì(béo phì mức thấp)");
             }
         });
     }
