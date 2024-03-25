@@ -150,5 +150,19 @@ public class QLSanPham extends JFrame {
 		txtdongia.setBounds(131, 173, 120, 20);
 		contentPane.add(txtdongia);
 
+		JButton btnNewButton = new JButton("THÊM");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				sanpham SP = new sanpham(txtmasp.getText(), txttensp.getText(), Float.parseFloat(txtsoluong.getText()), Float.parseFloat(txtdongia.getText()));
+				SP.setMasp(txtmasp.getText());
+				SP.setTensp(txttensp.getText());
+				SP.setSoluong(Integer.parseInt(txtsoluong.getText()));
+				SP.setDongia(Float.parseFloat(txtdongia.getText()));
+				Nhap(SP);
+				dtm.setDataVector(Vndung, Vtieude);
+				table.setModel(dtm);
+			}
+		});
+
 	
 }
