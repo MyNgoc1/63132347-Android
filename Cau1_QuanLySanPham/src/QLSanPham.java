@@ -94,6 +94,9 @@ public class QLSanPham extends JFrame {
 			}
 		});
 	}
+	/**
+	 * Create the frame.
+	 */
 
 	
 }
