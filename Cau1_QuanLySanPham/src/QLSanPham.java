@@ -125,5 +125,10 @@ public class QLSanPham extends JFrame {
 		lblNewLabel_1_1.setBounds(10, 105, 93, 14);
 		contentPane.add(lblNewLabel_1_1);
 
+		JLabel lblNewLabel_1_2 = new JLabel("Số Lượng");
+		lblNewLabel_1_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_1_2.setBounds(10, 137, 93, 19);
+		contentPane.add(lblNewLabel_1_2);
+
 	
 }
