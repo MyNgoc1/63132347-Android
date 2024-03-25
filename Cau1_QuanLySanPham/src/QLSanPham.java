@@ -181,6 +181,27 @@ public class QLSanPham extends JFrame {
 		        }
 			}
 		});
-
-	
+		btnXo.setBounds(241, 207, 89, 23);
+		contentPane.add(btnXo);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 241, 414, 124);
+		contentPane.add(scrollPane);
+		
+		table = new JTable();
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{"", null, null, null, null, null},
+			},
+			new String[] {
+				"M\u00E3 SP", "Lo\u1EA1i SP", "T\u00EAn SP", "S\u1ED1 L\u01B0\u1EE3ng", "\u0110\u01A1n Gi\u00E1", "Th\u00E0nh Ti\u1EC1n"
+			}
+		));
+		scrollPane.setViewportView(table);
+		
+		txtmasp = new JTextField();
+		txtmasp.setColumns(10);
+		txtmasp.setBounds(131, 65, 120, 20);
+		contentPane.add(txtmasp);
+	}	
 }
